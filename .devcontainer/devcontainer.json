@@ -1,0 +1,19 @@
+{
+    "name": "TensorFlow GPU",
+    "image": "tensorflow/tensorflow:latest-gpu-jupyter",
+    "runArgs": [
+      "--gpus=all"
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        },
+        "extensions": [
+          "ms-python.python"
+        ]
+      }
+    },
+    "postCreateCommand": "pip install --upgrade pip"
+  }
+  
